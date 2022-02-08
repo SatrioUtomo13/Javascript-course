@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const name = 'satrio utomo';
+        const date = new Date();
+        const tanggal = date.getDate();
+        const bulan = date.getMonth();
+        const tahun = date.getFullYear();
+
+        const hello = `hi ${name} 
+sekarang tanggal ${tanggal}-0${bulan + 1}-${tahun}`;
+
+        document.writeln("<pre>");
+        document.writeln(hello);
+        document.writeln("</pre>");
+    </script>
+</body>
+</html>

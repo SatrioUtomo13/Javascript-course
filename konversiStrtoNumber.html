@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //convert string to number using parseInt
+        const value1 = parseInt("1");
+        const value2 = 1;
+        const sum = value1 + value2;
+        document.writeln(sum);
+
+
+
+        //how to use parseInt,parseFloat,Number
+        document.writeln(`<p>${parseInt('1.1')}</p>`);
+        document.writeln(`<p>${parseFloat('1.1')}</p>`);
+        document.writeln(`<p>${Number('1.1')}</p>`);
+
+
+
+        //convert number to string using toString()
+        let a = 1;
+        let b = 2;
+        let ab = a.toString() + b.toString()
+        document.writeln(`<p>${ab}</p>`);
+
+
+
+        //checking variabel NaN or number
+        const first = 'aku';
+        const second = 1;
+        document.writeln(`<p>${isNaN(first)}</p>`);
+        document.writeln(`<p>${isNaN(second)}</p>`);
+
+
+        //study case
+        const val1 = Number(prompt('silahkan masukkan angka 1'));
+        const val2 = Number(prompt('silahkan masukkan angka 2!'));
+        if(isNaN(val1) || isNaN(val2)){
+            alert('silahkan masukkan sebuah angka')
+        }else{
+            const hasil = val1 + val2;
+            alert(hasil);
+        }
+
+
+    </script>
+</body>
+</html>
