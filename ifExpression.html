@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Expression</title>
+</head>
+<body>
+    <script>
+        //simple if expression
+        const examValue = 80;
+        if(examValue > 75){
+            alert('good job');
+        }else{
+            alert('coba lagi');
+        }
+
+        //else if
+        const result = 10;
+        if(result > 100 || result < 0){
+            alert('wrong data');
+        }else if(result >= 85 || result == 100){
+            alert('A');
+        }else if(result >= 70 || result ==84){
+            alert('B');
+        }else if(result >= 55 || result == 69){
+            alert('C');
+        }else{
+            alert('D')
+        }
+
+        //study case => result from input user
+        const age = parseInt(prompt('Insert your age!!'));
+        if(age >= 17 ){
+            alert("you're adult");
+        }else{
+            alert("you're too young, try again next year");
+        }
+    </script>
+</body>
+</html>
