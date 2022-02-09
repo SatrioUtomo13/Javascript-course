@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        //initial object and call it
+        const person = {
+            name : 'satrio',
+            addres : 'kp.Durian Runtuh',
+            age : '22'
+        }
+        document.writeln(`<P>Your name : ${person.name}</p>`);
+        document.writeln(`<P>Your addres : ${person.addres}</p>`);
+        document.writeln(`<P>Your age : ${person.age}</p>`);
+
+        //study case => insert object from user
+        const ask = confirm('do you want to add data from a book?');
+        if(ask == true){
+            const bookData = {
+                title : prompt('insert title of the book!'),
+                year : prompt('insert year of publication!'),
+                author : prompt("insert name of author's")
+            }
+            document.writeln(`<p>Title : ${bookData.title}</p>`);
+            document.writeln(`<p>Publication : ${bookData.year}</p>`);
+            document.writeln(`<p>Author : ${bookData.author}</p>`);
+        }else{
+            alert('thank you');
+        }
+    </script>
+</body>
+</html>
