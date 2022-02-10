@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //example of switch case
+        // const value = 'A';
+
+        // switch(value){
+        //     case 'A':
+        //         alert('you get pass perfectly');
+        //         break;
+        //     case 'B':
+        //         alert('you pass');
+        //     case 'C':
+        //         alert('you pass');
+        //         break;
+        //     default:
+        //         alert('you failed');
+        // }
+
+        //study case
+        let value2 = prompt('insert your grade!!');
+
+        if(isNaN(value2)){
+            switch(value2){
+                case 'A':
+                    alert('congratulatin you got a new bag');
+                    break;
+                case 'B':
+                    alert('congratulation you got a new shoes');
+                    break;
+                case 'C':
+                    alert('congratulation you got a new book');
+                    break;
+                default:
+                    alert('try next year');
+            }
+        }else{
+            alert('wrong format value, please insert value from A - D');
+        }
+
+    </script>
+</body>
+</html>
