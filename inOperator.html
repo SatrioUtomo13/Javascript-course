@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Operator</title>
+</head>
+<body>
+    <script>
+
+        let person = {
+            firstName : 'satrio',
+            middleName : undefined,
+            lastName : 'utomo'
+        }
+
+        if('firstName' in person){
+            alert(`hello ${person.firstName}`);
+        }else{
+            alert('hello');
+        }
+
+        //in operator didn't check value, only parameter
+        if('middleName' in person){
+            alert(`hello ${person.middleName}`);
+        }else{
+            alert(`hello`);
+        }
+
+ 
+
+
+    </script>
+</body>
+</html>
