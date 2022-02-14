@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic Operator in Non Boolean</title>
+</head>
+<body>
+    <script>
+
+        //OR operator
+        /* 
+        - it logic read from left to right
+        - read true condition
+        - if all condition is falsy, it will took last condition
+         */
+        //example
+
+        console.log('hello' || '');
+        console.log('' || []);
+        console.log('0' || 'nol');
+        console.log(0 || 'nol');
+        console.log(null || 'null');
+        console.log(undefined || 'undefined');        
+        console.log(null || false);        
+
+        const person = {
+            firstName : 'satrio',
+            lastName : 'utomo'
+        }
+
+        const name = person.firstName || person.lastName;
+        console.log(name);
+        
+
+        //AND operator
+        /* 
+        - it logic read from left to right
+        - read false condition
+        - if no one condition is false, it took last condition
+         */
+        console.log('hello' && '');
+        console.log('' && []);
+        console.log('0' && 'nol');
+        console.log(0 && 'nol');
+        console.log(null && 'null');
+        console.log(undefined && 'undefined');        
+        console.log('1' && true);   
+    </script>
+</body>
+</html>
