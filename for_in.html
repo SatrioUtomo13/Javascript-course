@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For in</title>
+</head>
+<body>
+    <script>
+
+        //use to know about property in object or index in array
+
+        //object
+        let person = {
+            firstName : 'satrio',
+            lastName : 'utomo'
+        }
+
+        for(const property in person){
+            document.writeln(`<P>${property} : ${person[property]}</P`);
+        }
+
+        //array
+        let name = ['satrio', 'utomo'];
+
+        for(const index in name){
+            document.writeln(`<p>${index} : ${name[index]}</P`);
+        }
+    </script>
+</body>
+</html>
