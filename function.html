@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+
+        //function is small code that can be call repeatly
+
+        //simple function
+        function sayHello(){
+            document.writeln(`<P>Hello world</p>`);
+        }
+        sayHello();
+        sayHello();
+        sayHello();
+
+
+
+
+        //function with parameter
+        function sayMe(firstName, lastName){
+            document.writeln(`<p>Hello ${firstName} ${lastName}</p>`)
+        }
+        sayMe('satrio', 'utomo');
+
+
+
+
+        //functin with return value
+        function birthDay(age){
+            const i = (`<p>Happy Birthday ${age}</p>`);
+            return i;
+        }
+        const mybirthday = birthDay(22);
+        document.writeln(mybirthday);
+
+    </script>
+</body>
+</html>
