@@ -9,35 +9,80 @@
 <body>
     <script>
 
-        //function is small code that can be call repeatly
+        // //function is small code that can be call repeatly
 
-        //simple function
-        function sayHello(){
-            document.writeln(`<P>Hello world</p>`);
+        // //simple function
+        // function sayHello(){
+        //     document.writeln(`<P>Hello world</p>`);
+        // }
+        // sayHello();
+        // sayHello();
+        // sayHello();
+
+
+
+
+        // //function with parameter
+        // function sayMe(firstName, lastName){
+        //     document.writeln(`<p>Hello ${firstName} ${lastName}</p>`)
+        // }
+        // sayMe('satrio', 'utomo');
+
+
+
+
+        // //functin with return value
+        // function birthDay(age){
+        //     const i = (`<p>Happy Birthday ${age}</p>`);
+        //     return i;
+        // }
+        // const mybirthday = birthDay(22);
+        // document.writeln(mybirthday);
+
+
+        //study case
+        let person = 100;
+        function eat (eat){
+            person = person + eat;
         }
-        sayHello();
-        sayHello();
-        sayHello();
 
-
-
-
-        //function with parameter
-        function sayMe(firstName, lastName){
-            document.writeln(`<p>Hello ${firstName} ${lastName}</p>`)
+        function sleep (sleep){
+            person = person + (sleep * 2);
         }
-        sayMe('satrio', 'utomo');
 
-
-
-
-        //functin with return value
-        function birthDay(age){
-            const i = (`<p>Happy Birthday ${age}</p>`);
-            return i;
+        function play (play){
+            person = person - (play * 5);
         }
-        const mybirthday = birthDay(22);
-        document.writeln(mybirthday);
+
+
+        while(true){
+            let action = prompt('what do you gonna do??');
+            switch (action){
+                case 'eat':
+                    eat(parseInt(prompt('how much??')));
+                    alert(`now you have ${person} health power`);
+                    break;
+                case 'sleep':
+                    sleep(parseInt(prompt('how long??')));
+                    alert(`now you have ${person} health power`);
+                    break;
+                case 'play':
+                    play(parseInt(prompt('how long??')));
+                    alert(`now you have ${person} health power`);
+                    break;
+                default:
+                    alert("you didn't do anything");
+            }
+            if(person <= 0 ){
+                alert('game over');
+                break;
+            }else{
+                let konfirmation = confirm('do you want to play again??');
+                if(konfirmation === false){
+                    break;
+                }
+            }
+        }
 
     </script>
 </body>
