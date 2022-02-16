@@ -38,51 +38,61 @@
         // }
         // const mybirthday = birthDay(22);
         // document.writeln(mybirthday);
+        
 
+        //default parameter
+        function info (name , status = 'unknown' ){
+            console.log(name);
+            console.log(status);
+        }
+
+        info();
+        info('satrio');
+        info('satrio' , 'marriage');
 
         //study case
-        let person = 100;
-        function eat (eat){
-            person = person + eat;
-        }
+        // let person = 100;
+        // function eat (eat){
+        //     person = person + eat;
+        // }
 
-        function sleep (sleep){
-            person = person + (sleep * 2);
-        }
+        // function sleep (sleep){
+        //     person = person + (sleep * 2);
+        // }
 
-        function play (play){
-            person = person - (play * 5);
-        }
+        // function play (play){
+        //     person = person - (play * 5);
+        // }
 
 
-        while(true){
-            let action = prompt('what do you gonna do??');
-            switch (action){
-                case 'eat':
-                    eat(parseInt(prompt('how much??')));
-                    alert(`now you have ${person} health power`);
-                    break;
-                case 'sleep':
-                    sleep(parseInt(prompt('how long??')));
-                    alert(`now you have ${person} health power`);
-                    break;
-                case 'play':
-                    play(parseInt(prompt('how long??')));
-                    alert(`now you have ${person} health power`);
-                    break;
-                default:
-                    alert("you didn't do anything");
-            }
-            if(person <= 0 ){
-                alert('game over');
-                break;
-            }else{
-                let konfirmation = confirm('do you want to play again??');
-                if(konfirmation === false){
-                    break;
-                }
-            }
-        }
+        // while(true){
+        //     let action = prompt('what do you gonna do??');
+        //     switch (action){
+        //         case 'eat':
+        //             eat(parseInt(prompt('how much??')));
+        //             alert(`now you have ${person} health power`);
+        //             break;
+        //         case 'sleep':
+        //             sleep(parseInt(prompt('how long??')));
+        //             alert(`now you have ${person} health power`);
+        //             break;
+        //         case 'play':
+        //             play(parseInt(prompt('how long??')));
+        //             alert(`now you have ${person} health power`);
+        //             break;
+        //         default:
+        //             alert("you didn't do anything");
+        //     }
+        //     if(person <= 0 ){
+        //         alert('game over');
+        //         break;
+        //     }else{
+        //         let konfirmation = confirm('do you want to play again??');
+        //         if(konfirmation === false){
+        //             break;
+        //         }
+        //     }
+        // }
 
     </script>
 </body>
