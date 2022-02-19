@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope in javascript</title>
+</head>
+<body>
+    <script>
+
+        //this is global scope
+        let counter = 0;
+
+        function hitMe(){
+            //this is local scope hitMe
+            counter++;
+        }
+
+        function other(){
+            //this is local scope other
+            hitMe();
+        }
+
+        hitMe();
+        hitMe();
+        other();
+        document.writeln(counter);
+
+
+
+        //nested function scope
+        function first(){
+            const n = 'first';
+            function second(){
+                document.writeln(`<p>${n}</p>`);
+            }
+            second();
+        }
+        first();
+
+
+    </script>
+</body>
+</html>
