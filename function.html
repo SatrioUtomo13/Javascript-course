@@ -50,6 +50,47 @@
         info('satrio');
         info('satrio' , 'marriage');
 
+
+
+        //rest parameter
+        function s (name, ...data){
+            let total = 0;
+            for(let item of data){
+                total += item;
+            }
+            document.writeln(`<p>your ${name} is ${total}</p`);
+        }
+        s('orange', 23,54,23);
+
+
+
+        //function as a value
+        function myName(name){
+            document.writeln(`<p>hello ${name}</p`);
+        }
+        let me = myName;
+        me('satrio');
+
+
+
+        //anonymous function
+        const hai = function(sapa){
+            document.writeln(`<p>hello ${sapa}</p`);
+        }
+        hai('utomo');
+
+
+
+        //inner function
+        function outer(){
+            document.writeln(`<p>this is outer function</p`);
+            function inner(){
+                document.writeln(`<p>this is function inner</p`);
+            }
+            inner();   
+        }
+        outer();
+
         //study case
         // let person = 100;
         // function eat (eat){
