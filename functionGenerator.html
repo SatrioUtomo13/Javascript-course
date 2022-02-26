@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Generator</title>
+</head>
+<body>
+    <script>
+
+        //example 1
+        function* createName(){
+            yield 'satrio'
+            yield 'utomo'
+        }
+        const nama = createName();
+        for (const names of nama) {
+            console.log(names);
+        }
+
+        //example 2
+        function* ganjil(value){
+            for(let i=0; i<=value; i++){
+                if(i%2 === 1){
+                    yield i;
+                }
+            }
+        }
+
+        const dataGanjil = ganjil(10);
+        for (const number of dataGanjil) {
+            console.log(number);
+        }
+
+    </script>
+</body>
+</html>
