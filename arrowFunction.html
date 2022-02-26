@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        //example 1 : regular arrow function
+        const sayHello = (name) => {
+            let say = `hello ${name}`;
+            console.log(say);
+        }
+        sayHello('satrio');
+
+        //example 2 : no body function
+        const sayHello2 = (name) => console.log(`I am ${name}`);
+        sayHello2('utomo');
+
+        //example 3 : return value
+        const number = (a,b) => a+b;
+        console.log(number(10,5));
+
+
+
+        //study case : age
+
+        const age = (born) => alert(`you are ${2022 - born} years old now`);
+        age(parseInt(prompt(`input year of birth`)));
+    </script>
+</body>
+</html>
