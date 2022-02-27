@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+
+        //destructuring array
+        const names = ['satrio', 'utomo', 'arrazi', 'zenit', 'muhammad'];
+        const [firstName,middleName,lastName, ...other] = names;
+
+        console.log(firstName);
+        console.log(middleName);
+        console.log(lastName);
+        console.log(other);
+
+
+        //destructuring object
+        let human = {
+            first : 'satrio',
+            last : 'utomo',
+            addres : {
+                city : 'serang',
+                Country : 'indonesia'
+            },
+            hobby : 'coding',
+            channel : 'short code'
+        }
+        let {first, last, addres: {city, Country}, ...e} = human;
+        console.log(first);
+        console.log(last);
+        console.log(city);
+        console.log(Country);
+        console.log(e);
+
+
+        //destructuring in function parameter
+        {
+            const person = {
+                firstName : 'satrio',
+                lastName : 'utomo'
+            }
+
+            function add ({firstName,lastName}){
+                console.log(firstName);
+                console.log(lastName);
+            }
+
+            add(person);
+        }
+
+        {
+            function sum ([first, last]){
+                return first + last;
+            }
+            console.log(sum([1,2]));
+            console.log(sum([10,20]));
+        }
+
+
+        //default value in destruction
+
+        {
+            const arr = ['satrio', 'utomo'];
+            let [a,b,c = 'zenit'] = arr;
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
+
+    </script>
+</body>
+</html>
